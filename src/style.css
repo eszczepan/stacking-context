@@ -1,0 +1,31 @@
+:root {
+  --color-blue100: #020b23;
+  --color-blue90: #061a57;
+  --color-blue60: #264bc5;
+  --color-blue20: #c7d5f9;
+  --color-blue10: #f5f7fe;
+  --color-red100: #ff716b;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f5f7fe;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem 3rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  color: #020b23;
+}
+
+h2 {
+  margin: 3rem 0 1rem;
+}
