@@ -9,7 +9,7 @@
 
 body {
   font-family: sans-serif;
-  background-color: #f5f7fe;
+  background-color: var(--color-blue10);
 }
 
 main {
@@ -23,7 +23,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 2rem 0;
-  color: #020b23;
+  color: var(--color-blue100);
 }
 
 h2 {
