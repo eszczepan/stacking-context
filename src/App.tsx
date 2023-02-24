@@ -5,24 +5,11 @@ import {
   positionedLayoutFiles,
   zIndexFiles,
   flexboxZIndexFiles,
+  AftonbladetFiles,
   stackingContextFiles,
+  stackingContextVinkFiles,
 } from './files';
-
-const sandpackOptions = {
-  showLineNumbers: false, // default - true
-  showInlineErrors: true, // default - false
-  wrapContent: true, // default - false
-  editorHeight: 500, // default - 300
-  editorWidthPercentage: 65, // default - 50
-};
-
-const sandpackVinkOptions = {
-  showLineNumbers: false, // default - true
-  showInlineErrors: true, // default - false
-  wrapContent: true, // default - false
-  editorHeight: 500, // default - 300
-  editorWidthPercentage: 40, // default - 50
-};
+import { sandpackNarrowOptions, sandpackWideOptions } from './sandpack-config';
 
 function App() {
   return (
@@ -34,7 +21,7 @@ function App() {
       <h2>Flow layout</h2>
       <Sandpack
         template="react"
-        options={sandpackOptions}
+        options={sandpackNarrowOptions}
         theme={cobalt2}
         files={flowLayoutFiles}
       />
@@ -42,7 +29,7 @@ function App() {
       <h2>Positioned layout</h2>
       <Sandpack
         template="react"
-        options={sandpackOptions}
+        options={sandpackNarrowOptions}
         theme={cobalt2}
         files={positionedLayoutFiles}
       />
@@ -50,7 +37,7 @@ function App() {
       <h2>z-index</h2>
       <Sandpack
         template="react"
-        options={sandpackOptions}
+        options={sandpackNarrowOptions}
         theme={cobalt2}
         files={zIndexFiles}
       />
@@ -58,17 +45,33 @@ function App() {
       <h2>Flexbox z-index</h2>
       <Sandpack
         template="react"
-        options={sandpackOptions}
+        options={sandpackNarrowOptions}
         theme={cobalt2}
         files={flexboxZIndexFiles}
       />
 
-      <h2>Stacking context</h2>
+      <h2>Stacking context - modal</h2>
       <Sandpack
         template="react"
-        options={sandpackVinkOptions}
+        options={sandpackWideOptions}
+        theme={cobalt2}
+        files={AftonbladetFiles}
+      />
+
+      <h2>Stacking context - cards</h2>
+      <Sandpack
+        template="react"
+        options={sandpackWideOptions}
         theme={cobalt2}
         files={stackingContextFiles}
+      />
+
+      <h2>Stacking context - Vink</h2>
+      <Sandpack
+        template="react"
+        options={sandpackWideOptions}
+        theme={cobalt2}
+        files={stackingContextVinkFiles}
       />
     </main>
   );
